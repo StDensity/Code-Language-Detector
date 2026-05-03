@@ -1,0 +1,16 @@
+{"name": "python_clear_function", "category": "clear", "code": "def greet(name):\n    print(f\"Hello, {name}\")\n    return name.lower()", "expected": "python"}
+{"name": "javascript_clear_function", "category": "clear", "code": "function greet(name) {\n  console.log(`Hello, ${name}`);\n  return name.toLowerCase();\n}", "expected": "javascript"}
+{"name": "python_import_class", "category": "clear", "code": "import os\n\nclass Config:\n    def __init__(self, path):\n        self.path = os.path.abspath(path)", "expected": "python"}
+{"name": "javascript_const_arrow", "category": "clear", "code": "const add = (a, b) => {\n  return a + b;\n};\nexport default add;", "expected": "javascript"}
+{"name": "python_short_def", "category": "short", "code": "def x(): pass", "expected": "python"}
+{"name": "javascript_short_arrow", "category": "short", "code": "const x = () => 1;", "expected": "javascript"}
+{"name": "python_short_print", "category": "short", "code": "print(\"hi\")", "expected": "python"}
+{"name": "javascript_short_log", "category": "short", "code": "console.log(\"hi\")", "expected": "javascript"}
+{"name": "ambiguous_if_block", "category": "ambiguous", "code": "if (x > 10) {\n  return x;\n}", "expected": "javascript"}
+{"name": "ambiguous_assignment", "category": "ambiguous", "code": "value = get_value()", "expected": "python"}
+{"name": "ambiguous_comment", "category": "ambiguous", "code": "// calculate total\nreturn total", "expected": "javascript"}
+{"name": "ambiguous_json_like", "category": "ambiguous", "code": "{\n  \"name\": \"demo\",\n  \"active\": true\n}", "expected": "javascript"}
+{"name": "mixed_python_with_js_text", "category": "mixed", "code": "def render():\n    script = \"console.log('hello')\"\n    return script", "expected": "python"}
+{"name": "mixed_js_with_python_text", "category": "mixed", "code": "const template = \"def hello(): print('hi')\";\nconsole.log(template);", "expected": "javascript"}
+{"name": "mixed_markdown_python", "category": "mixed", "code": "Here is code:\n```python\ndef hello():\n    print('hi')\n```", "expected": "python"}
+{"name": "mixed_markdown_javascript", "category": "mixed", "code": "Here is code:\n```javascript\nfunction hello() {\n  console.log('hi');\n}\n```", "expected": "javascript"}
