@@ -37,12 +37,6 @@ stress_test.py            # Manual edge-case tests
 uv sync
 ```
 
-If FastAPI dependencies are not installed yet:
-
-```powershell
-uv add "fastapi[standard]"
-```
-
 ## Prepare Data
 
 Create clean JSONL files from CodeSearchNet:
